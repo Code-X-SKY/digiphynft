@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>DigiPhyNFT Marketplace</title>
+
+  <base href="%PUBLIC_URL%/">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000" />
+
+
+
+  <meta name="description" content="India's leading NFT marketplace" />
+  <meta name="og:title" content="DigiPhyNFT" />
+  <meta name="og:description" content="India's leading NFT marketplace" />
+  <meta name="og:image" content="https://digiphynft.shop/images/logoImage.png" />
+
+  <!-- Size of image. Any size up to 300. Anything above 300px will not work in WhatsApp -->
+  <meta property="og:image:width" content="300">
+  <meta property="og:image:height" content="300">
+
+
+  <!-- MS, fb & Whatsapp -->
+
+  <!-- MS Tile - for Microsoft apps-->
+  <meta name="msapplication-TileImage"
+    content="https://digiphy.mypinata.cloud/ipfs/QmQYtVdaGMf3CaNd3DSSsvCL9FqYSBwe1wVnRfTQs6D9g1">
+
+  <!-- fb & Whatsapp -->
+
+
+
+
+
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+  <!-- <link rel="stylesheet" href="css/icon.css"> -->
+  <!-- <link rel="stylesheet" href="css/loader.css">  -->
+  <!-- <link rel="stylesheet" href="css/idangerous.swiper.css"> -->
+  <!-- <link rel="stylesheet" href="css/jquery-ui.css"> -->
+  <link rel="stylesheet" href="css/stylesheet2.css">
+  <!--===============================================================================================-->
+  <!-- <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css"> -->
+  <!--===============================================================================================-->
+  <!-- <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css"> -->
+  <!--===============================================================================================-->
+  <!-- <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css"> -->
+  <!--===============================================================================================-->
+  <!-- <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css"> -->
+  <!--===============================================================================================-->
+  <!-- <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css"> -->
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="css/util.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <!-- <link rel="stylesheet" type="text/css" href="css/videoreact.css"> -->
+  <link rel="stylesheet" href="vendor/font-awesome.min.css">
+
+</head>
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!-- <script src="js/jquery.bcSwipe.js"></script> -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <!-- <script src="js/jquery.mobile-1.4.5.min.js"></script> -->
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!--===============================================================================================-->
+  <!-- <script src="vendor/animsition/js/animsition.min.js"></script> -->
+  <!--===============================================================================================-->
+  <!-- <script src="vendor/bootstrap/js/popper.js"></script> -->
+  <!-- <script src="vendor/bootstrap/js/bootstrap.min.js"></script> -->
+  <!--===============================================================================================-->
+  <!-- <script src="vendor/select2/select2.min.js"></script> -->
+  <!--===============================================================================================-->
+  <!-- <script src="vendor/daterangepicker/moment.min.js"></script> -->
+  <!-- <script src="vendor/daterangepicker/daterangepicker.js"></script> -->
+  <!--===============================================================================================-->
+  <!-- <script src="vendor/countdowntime/countdowntime.js"></script> -->
+  <!--===============================================================================================-->
+  <script src="js/main.js"></script>
+  <!-- <script src="js/idangerous.swiper.min.js"></script> -->
+  <!-- <script src="js/jquery.mixitup.js"></script> -->
+  <script src="js/jquery.viewportchecker.min.js"></script>
+  <!-- <script src="js/filters.js"></script> -->
+  <script src="js/global.js"></script>
+
+
+  <!-- <script type="text/javascript"></script> -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0G2643V20"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-G0G2643V20');
+  </script>
+  <!-- <script type="text/javascript">
+
+    $(".toggle-password").click(function () {
+
+      $(this).toggleClass("fa-eye fa-eye-slash");
+      var input = $($(this).attr("toggle"));
+      if (input.attr("type") == "password") {
+        input.attr("type", "text");
+      } else {
+        input.attr("type", "password");
+      }
+    });
+  </script> -->
+
+  <script>
+    $(document).ready(function () {
+      $('body').delegate(".user-dropprofile", "click", function () {
+        $(this).find(".drop-down-list").slideToggle("fast");
+      });
+    });
+    $('body').delegate(document, "click", function (event) {
+      var $trigger = $(".user-dropprofile");
+      if ($trigger !== event.target && !$trigger.has(event.target).length) {
+        $(".drop-down-list").slideUp("fast");
+      }
+    });
+  </script>
+
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+</body>
+
+
+</html>
+
+
+
+
+
+<script>
+
+
+  ethereum.on('close', function (accounts) {
+    window.location.reload()
+  });
+</script>
